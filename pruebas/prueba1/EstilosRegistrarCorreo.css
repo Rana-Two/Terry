@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+    height: 550px;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .left-panel {
+    flex: 1;
+    background: linear-gradient(to bottom right, #58ccff, #0099ff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .left-panel h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel p {
+    font-size: 18px;
+  }
+  
+  .right-panel {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-panel h2 {
+    color: #0099ff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #007acc;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #0099ff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-panel, .right-panel {
+      width: 100%;
+      height: auto;
+      padding: 30px 20px;
+    }
+  }
+  

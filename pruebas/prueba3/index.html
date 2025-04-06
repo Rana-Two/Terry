@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener tu CSS en un archivo llamado styles.css -->
+</head>
+<body>
+
+    <div class="container">
+        <!-- Lado del formulario -->
+        <div class="form-side">
+            <br>
+            <h2>Bienvenido</h2>
+            <br><br><br>
+            <p>Para acceder, por favor inicia sesión.</p>
+            <!-- Botón que redirige a la página de login -->
+            <button onclick="window.location.href='./fronted/login.html'">INGRESAR</button>
+        </div>
+
+        <!-- Lado de la imagen -->
+        <div class="image-side">
+            <img src="./img/PERFILPAGE.png" alt="perfil" width="200" height="340">
+        </div>
+    </div>
+<br><br><br>
+
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(n) {
+            slideIndex += n;
+            const slides = document.querySelectorAll(".slider img");
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex].style.display = "block";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            moveSlide(0); // Muestra la primera imagen cuando cargue la página
+        });
+    </script>
+
+</body>
+</html>

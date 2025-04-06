@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><center>
+    <div class="container">
+        <div class="image-side">
+            <br><img src="./img/PERFILPAGE.png" alt="perfil" width="200" height="340">
+        </div>
+        <div class="form-side">
+            <div id="signup">
+                <h2>Crear nueva cuenta</h2>
+                <input type="text" placeholder="Nombre"><br>
+                <input type="email" placeholder="Correo electrónico"><br>
+                <input type="password" placeholder="Contraseña"><br>
+                <input type="date" placeholder="Fecha de nacimiento"><br>
+                <button>INSCRIBIRSE</button>
+                <div class="link"><a href="#" onclick="showForm('login')">¿Ya estás registrado? Iniciar sesión</a></div>
+                <div class="link"><a href="#" onclick="showForm('recover')">¿Olvidaste tu contraseña?</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function loginRedirect() {
+            // Aquí podrías agregar validaciones antes si deseas
+            window.location.href = 'inicio.html';
+        }
+    </script>
+</center>
+</body>
+</html>
